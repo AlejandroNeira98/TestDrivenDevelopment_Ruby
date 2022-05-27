@@ -4,7 +4,7 @@ describe Solver do
   before :all do
     @solver= Solver.new
   end
-  describe 'Factorial' do
+  describe 'factorial' do
     it 'return a velue when positive number is passed' do
       number = 5
       expect(@solver.factorial(number)).to eq 120
@@ -15,4 +15,10 @@ describe Solver do
     end
   end
 
+  describe 'Reverse' do
+    it 'reverses the string correctly' do
+    string = 'ABCD'
+      expect(@solver.reverse(string)).to eql 'DCBA'
+    end
+  end
 end
